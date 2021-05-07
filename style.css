@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  overflow: hidden;
+  margin: 0 4rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1rem;
+}
+h2 {
+  margin: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.emp {
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  background: #ffbc00;
+  color: #333;
+  font-size: 1.2rem;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-bottom: 1rem;
+}
+
+.btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+header {
+  background: #333;
+  color: #f4f4f4;
+  height: 12vh;
+  text-align: center;
+}
+
+#main-info {
+  background: #eee;
+  padding: 1rem 0;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 1rem;
+  
+  
+}
+.grid-1 > * {
+  justify-content: center;
+  align-items: center;
+
+}
+
+img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.grid-1 p {
+  padding: 2rem 0;
+  font-size: 1.2rem;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 6rem;
+  background: #ffbc00;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.lead {
+  margin: 1rem 0;
+  font-size: 2rem;
+  text-align: center;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}
+.grid-2 > * {
+  background: #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.grid-2 p {
+  padding: 0.5rem 0;
+}
+/* contact */
+
+#contact {
+  background: #eee;
+}
+
+input {
+  display: block;
+}
+.text-fields {
+  display: grid;
+  grid-template-areas: 
+  'firstname lastname'
+  'email subject'
+  'message message';
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.text-input {
+  padding: 0.5rem 0.5rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.firstname-input {
+  grid-area: firstname;
+}
+.lastname-input {
+  grid-area: lastname;
+}
+.email-input {
+  grid-area: email;
+}
+.subject-input {
+  grid-area: subject;
+}
+.message-input {
+  grid-area: message;
+  height: 100px;
+}
+
+
+
+
+
+/* footer */
+
+#main-footer {
+  height: 8vh;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding-top: 1.2rem;
+}
+
+
+
+
+
+
+

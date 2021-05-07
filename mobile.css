@@ -1,0 +1,42 @@
+@media(max-width: 900px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  header {
+    height: 8vh;
+  }
+  
+  #main-footer {
+    height: 6vh;
+  }
+}
+
+@media(max-width: 500px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  header {
+    height: 20vh;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  img {
+    display: none;
+  }
+
+  .grid-1 {
+    grid-template-columns: 1fr;
+  }
+  .text-fields {
+    grid-template-areas: 
+    'firstname'
+    'lastname'
+    'email'
+    'subject'
+    'message';
+  }
+}
+
